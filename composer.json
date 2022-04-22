@@ -1,6 +1,7 @@
 {
     "name": "ilhambahari/mq-controller",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Ilham Bahari",
@@ -13,5 +14,6 @@
 	"files": [
 		"src/helpers.php"
 	],
+    "minimum-stability": "dev",
     "require": {}
 }
