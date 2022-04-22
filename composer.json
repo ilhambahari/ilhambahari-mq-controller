@@ -1,0 +1,17 @@
+{
+    "name": "ilhambahari/mq-controller",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ilham Bahari",
+            "email": "muhari07@gmail.com"
+        }
+    ],
+	"psr-4": {
+		"Qoligo\\App\\": "src"
+	},
+	"files": [
+		"src/helpers.php"
+	],
+    "require": {}
+}
