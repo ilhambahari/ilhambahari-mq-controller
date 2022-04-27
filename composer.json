@@ -9,7 +9,7 @@
         }
     ],
 	"psr-4": {
-		"Qoligo\\App\\": "src"
+		"Qoligo\\Package\\": "src"
 	},
 	"files": [
 		"src/helpers.php"
