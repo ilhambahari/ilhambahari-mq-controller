@@ -11,13 +11,17 @@ class MqHttp {
         $this->connection = new HttpClient();
     }
 
-    public function publishMessage($form_params, $env)
+    public function publishMessage($event, $payload, $arguments = [])
     {
       try {
-        $this->connection->request('POST', $env['config_base_url'] . $env['config_producer_url'], [
-            'form_params' => $form_params,
+        $this->connection->request('POST', config('app.config_base_url') . config('app.config_producer_url'), [
+            'form_params' => [
+                'event' => $event,
+                'payload' => $payload,
+                'arguments' => $arguments
+            ],
             \GuzzleHttp\RequestOptions::HEADERS => [
-                'Authorization' => $env['authorization']
+                'Authorization' => config('app.authorization')
             ]
         ]);
       } catch (\Exception $e) {
