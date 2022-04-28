@@ -5,6 +5,7 @@ namespace Qoligo\Package;
 use GuzzleHttp\Client as HttpClient;
 
 class MqHttp {
+    
     public function __construct()
     {
         $this->connection = new HttpClient();

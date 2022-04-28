@@ -8,12 +8,11 @@
             "email": "muhari07@gmail.com"
         }
     ],
-	"psr-4": {
-		"Qoligo\\Package\\": "src"
-	},
-	"files": [
-		"src/helpers.php"
-	],
+     "autoload": {
+        "psr-4": {
+            "Qoligo\\Package\\": "src/"
+        }
+    },
     "minimum-stability": "dev",
     "require": {}
 }
